@@ -1,15 +1,15 @@
-PYTHON=python
+PYTHON=python3
 OUTPUT=lenet5
-EPOCH=5
+EPOCHS=3
 
 
 all: train_export
 
 train_export:
-	${PYTHON} -m webmnist -o ${OUTPUT} -e ${EPOCH} --train --export
+	${PYTHON} -m webmnist -o ${OUTPUT} -e ${EPOCHS} --train --export
 
 train:
-	${PYTHON} -m webmnist -o ${OUTPUT} -e ${EPOCH} --train
+	${PYTHON} -m webmnist -o ${OUTPUT} -e ${EPOCHS} --train
 
 export:
-	${PYTHON} -m webmnist -o ${OUTPUT} -e ${EPOCH} --export
+	${PYTHON} -m webmnist -o ${OUTPUT} --export
