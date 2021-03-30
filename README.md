@@ -1,1 +1,2 @@
-# WebMnist
+# DVICMNIST
+Web Live MNIST Classification
